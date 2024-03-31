@@ -1,0 +1,10 @@
+version: '3'
+services:
+  gs:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: gs:latest
+    container_name: gs
+    ports:
+      - 5000:80  
